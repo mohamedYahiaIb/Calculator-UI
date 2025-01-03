@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Calculator</class>
+ <widget class="QMainWindow" name="Calculator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>299</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Calculator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background-color: #2e3440; /* Dark background */
+    color: #eceff4; /* Light text */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="1">
+     <widget class="QPushButton" name="ChangeSign">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #434c5e; /* Button background */
+    color: #eceff4; /* Text color */
+    border: 2px solid #4c566a; /* Gray border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+QPushButton:hover {
+    background-color: #4c566a; /* Gray hover effect */
+    border-color: #5e6775; /* Slightly lighter gray border on hover */
+}
+
+QPushButton:pressed {
+    background-color: #5e6775; /* Lighter gray for pressed effect */
+    border-color: #4c566a; /* Original gray border */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>+/-</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QPushButton" name="Button3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #434c5e; /* Button background */
+    color: #eceff4; /* Text color */
+    border: 2px solid #88c0d0; /* Blue border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+QPushButton:hover {
+    background-color: #5e81ac; /* Hover effect */
+}
+
+QPushButton:pressed {
+    background-color: #88c0d0; /* Pressed effect */
+    border-color: #5e81ac;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPushButton" name="Button4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #434c5e; /* Button background */
+    color: #eceff4; /* Text color */
+    border: 2px solid #88c0d0; /* Blue border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+QPushButton:hover {
+    background-color: #5e81ac; /* Hover effect */
+}
+
+QPushButton:pressed {
+    background-color: #88c0d0; /* Pressed effect */
+    border-color: #5e81ac;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>4</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="Percenttage">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #434c5e; /* Button background */
+    color: #eceff4; /* Text color */
+    border: 2px solid #4c566a; /* Gray border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+QPushButton:hover {
+    background-color: #4c566a; /* Gray hover effect */
+    border-color: #5e6775; /* Slightly lighter gray border on hover */
+}
+
+QPushButton:pressed {
+    background-color: #5e6775; /* Lighter gray for pressed effect */
+    border-color: #4c566a; /* Original gray border */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>%</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="Clear">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #434c5e; /* Button background */
+    color: #eceff4; /* Text color */
+    border: 2px solid #4c566a; /* Gray border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+QPushButton:hover {
+    background-color: #4c566a; /* Gray hover effect */
+    border-color: #5e6775; /* Slightly lighter gray border on hover */
+}
+
+QPushButton:pressed {
+    background-color: #5e6775; /* Lighter gray for pressed effect */
+    border-color: #4c566a; /* Original gray border */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>AC</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QPushButton" name="Button1">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #434c5e; /* Button background */
+    color: #eceff4; /* Text color */
+    border: 2px solid #88c0d0; /* Blue border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+QPushButton:hover {
+    background-color: #5e81ac; /* Hover effect */
+}
+
+QPushButton:pressed {
+    background-color: #88c0d0; /* Pressed effect */
+    border-color: #5e81ac;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QPushButton" name="Substract">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #434c5e; /* Button background */
+    color: #eceff4; /* Text color */
+    border: 2px solid #d08770; /* Light orange border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+QPushButton:hover {
+    background-color: #d08770; /* Light orange hover effect */
+    border-color: #e5b680; /* Softer orange border on hover */
+}
+
+QPushButton:pressed {
+    background-color: #e5b680; /* Lighter orange for pressed effect */
+    border-color: #d08770; /* Return to original orange border */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QPushButton" name="Multiply">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #434c5e; /* Button background */
+    color: #eceff4; /* Text color */
+    border: 2px solid #d08770; /* Light orange border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+QPushButton:hover {
+    background-color: #d08770; /* Light orange hover effect */
+    border-color: #e5b680; /* Softer orange border on hover */
+}
+
+QPushButton:pressed {
+    background-color: #e5b680; /* Lighter orange for pressed effect */
+    border-color: #d08770; /* Return to original orange border */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>*</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QPushButton" name="Add">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #434c5e; /* Button background */
+    color: #eceff4; /* Text color */
+    border: 2px solid #d08770; /* Light orange border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+QPushButton:hover {
+    background-color: #d08770; /* Light orange hover effect */
+    border-color: #e5b680; /* Softer orange border on hover */
+}
+
+QPushButton:pressed {
+    background-color: #e5b680; /* Lighter orange for pressed effect */
+    border-color: #d08770; /* Return to original orange border */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="Button7">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #434c5e; /* Button background */
+    color: #eceff4; /* Text color */
+    border: 2px solid #88c0d0; /* Blue border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+QPushButton:hover {
+    background-color: #5e81ac; /* Hover effect */
+}
+
+QPushButton:pressed {
+    background-color: #88c0d0; /* Pressed effect */
+    border-color: #5e81ac;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>7</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="3">
+     <widget class="QPushButton" name="Equal">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #434c5e; /* Button background */
+    color: #eceff4; /* Text color */
+    border: 2px solid #a3be8c; /* Light green border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+QPushButton:hover {
+    background-color: #a3be8c; /* Light green hover effect */
+    border-color: #b5d19a; /* Softer green border on hover */
+}
+
+QPushButton:pressed {
+    background-color: #b5d19a; /* Lighter green for pressed effect */
+    border-color: #a3be8c; /* Original light green border */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>=</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="Button8">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #434c5e; /* Button background */
+    color: #eceff4; /* Text color */
+    border: 2px solid #88c0d0; /* Blue border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+QPushButton:hover {
+    background-color: #5e81ac; /* Hover effect */
+}
+
+QPushButton:pressed {
+    background-color: #88c0d0; /* Pressed effect */
+    border-color: #5e81ac;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>8</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0" colspan="2">
+     <widget class="QPushButton" name="Button0">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #434c5e; /* Button background */
+    color: #eceff4; /* Text color */
+    border: 2px solid #88c0d0; /* Blue border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+QPushButton:hover {
+    background-color: #5e81ac; /* Hover effect */
+}
+
+QPushButton:pressed {
+    background-color: #88c0d0; /* Pressed effect */
+    border-color: #5e81ac;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="Button9">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #434c5e; /* Button background */
+    color: #eceff4; /* Text color */
+    border: 2px solid #88c0d0; /* Blue border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+QPushButton:hover {
+    background-color: #5e81ac; /* Hover effect */
+}
+
+QPushButton:pressed {
+    background-color: #88c0d0; /* Pressed effect */
+    border-color: #5e81ac;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>9</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="Button5">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #434c5e; /* Button background */
+    color: #eceff4; /* Text color */
+    border: 2px solid #88c0d0; /* Blue border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+QPushButton:hover {
+    background-color: #5e81ac; /* Hover effect */
+}
+
+QPushButton:pressed {
+    background-color: #88c0d0; /* Pressed effect */
+    border-color: #5e81ac;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>5</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2">
+     <widget class="QPushButton" name="Point">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #434c5e; /* Button background */
+    color: #eceff4; /* Text color */
+    border: 2px solid #4c566a; /* Gray border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+QPushButton:hover {
+    background-color: #4c566a; /* Gray hover effect */
+    border-color: #5e6775; /* Slightly lighter gray border on hover */
+}
+
+QPushButton:pressed {
+    background-color: #5e6775; /* Lighter gray for pressed effect */
+    border-color: #4c566a; /* Original gray border */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>.</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QPushButton" name="Divide">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #434c5e; /* Button background */
+    color: #eceff4; /* Text color */
+    border: 2px solid #d08770; /* Light orange border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+QPushButton:hover {
+    background-color: #d08770; /* Light orange hover effect */
+    border-color: #e5b680; /* Softer orange border on hover */
+}
+
+QPushButton:pressed {
+    background-color: #e5b680; /* Lighter orange for pressed effect */
+    border-color: #d08770; /* Return to original orange border */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>/</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QPushButton" name="Button6">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #434c5e; /* Button background */
+    color: #eceff4; /* Text color */
+    border: 2px solid #88c0d0; /* Blue border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+QPushButton:hover {
+    background-color: #5e81ac; /* Hover effect */
+}
+
+QPushButton:pressed {
+    background-color: #88c0d0; /* Pressed effect */
+    border-color: #5e81ac;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>6</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="Button2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #434c5e; /* Button background */
+    color: #eceff4; /* Text color */
+    border: 2px solid #88c0d0; /* Blue border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+QPushButton:hover {
+    background-color: #5e81ac; /* Hover effect */
+}
+
+QPushButton:pressed {
+    background-color: #88c0d0; /* Pressed effect */
+    border-color: #5e81ac;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="4">
+     <widget class="QLabel" name="Display">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    font-family: Arial; /* Arial font */
+    font-size: 30px; /* Bigger text size */
+    font-weight: bold; /* Bold text */
+    color: #eceff4; /* Light text color to match the theme */
+    background-color: transparent; /* Transparent background */
+    padding-top: 5px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignBottom|Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
